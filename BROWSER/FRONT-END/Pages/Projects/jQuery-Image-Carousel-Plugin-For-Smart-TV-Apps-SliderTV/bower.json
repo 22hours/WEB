@@ -1,0 +1,32 @@
+{
+    "name": "jquery-slidertv",
+    "version": "1.0.8",
+    "description": "SliderTV is an easy-to-use jQuery slider plugin optimized for Smart TV apps.",
+    "main": "sliderTV.js",
+    "moduleType": [ "globals" ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gibbok/jquery-slidertv.git"
+    },
+    "keywords": [
+        "slider",
+        "carousel",
+        "smart tv app",
+        "smart tv",
+        "javascript",
+        "jquery",
+        "jquery-plugin"
+    ],
+    "author": "GibboK",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "jquery": "^2.2.0"
+    }
+}

@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TV Shutdown Effect Demo</title>
+<style>
+BODY { background: #33c0ad; }
+
+.screen-wr {
+  position: relative;
+  width: 620px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.screen-wr A {
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color 150ms ease;
+  transition: border-color 150ms ease;
+  text-transform: uppercase;
+}
+
+.screen-wr A:hover { border-color: black; }
+
+.tv {
+  width: 100%;
+  height: 400px;
+  margin: 15px 0 0 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #231f20;
+  -webkit-box-shadow: 13px 13px rgba(0, 0, 0, 0.16);
+  box-shadow: 13px 13px rgba(0, 0, 0, 0.16);
+}
+
+.screen-inner {
+  width: 590px;
+  height: 330px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: black;
+  overflow: hidden;
+}
+
+.screen-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.screen-content:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: white;
+  opacity: 0;
+  left: 0;
+  top: 0;
+}
+
+.tv._off .screen-content {
+  -webkit-animation: shutdown 400ms linear;
+  animation: shutdown 400ms linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.tv._off .screen-content:after {
+  -webkit-animation: shutdown-opa 400ms linear;
+  animation: shutdown-opa 400ms linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.tv-panel {
+  height: 40px;
+  width: 100%;
+  background: #343434;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.tv-panel__indicators {
+  position: absolute;
+  left: 6px;
+  bottom: 5px;
+  font-size: 0;
+}
+
+.tv-panel__indicators SPAN {
+  background: #fa4c4c;
+  width: 3px;
+  height: 3px;
+  margin: 0 4px 0 0;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+
+.tv._off .tv-panel__indicators SPAN { background: #8f8875; }
+
+.tv-panel__buttons {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  bottom: 16px;
+  font-size: 0;
+}
+
+.tv-panel__buttons SPAN {
+  background: #222222;
+  width: 14px;
+  height: 7px;
+  margin: 0 3px 0 0;
+  display: inline-block;
+  -webkit-transition: background 150ms ease;
+  transition: background 150ms ease;
+}
+ @-webkit-keyframes 
+shutdown {  0% {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 20% {
+ -webkit-transform: scale3d(1, 1.6, 1);
+ transform: scale3d(1, 1.6, 1);
+}
+ 50% {
+ -webkit-transform: scale3d(1, 0.005, 1);
+ transform: scale3d(1, 0.005, 1);
+}
+ 100% {
+ -webkit-transform: scale3d(0, 0, 1);
+ transform: scale3d(0, 0, 1);
+}
+}
+ @keyframes 
+shutdown {  0% {
+ -webkit-transform: scale3d(1, 1, 1);
+ transform: scale3d(1, 1, 1);
+}
+ 20% {
+ -webkit-transform: scale3d(1, 1.6, 1);
+ transform: scale3d(1, 1.6, 1);
+}
+ 50% {
+ -webkit-transform: scale3d(1, 0.005, 1);
+ transform: scale3d(1, 0.005, 1);
+}
+ 100% {
+ -webkit-transform: scale3d(0, 0, 1);
+ transform: scale3d(0, 0, 1);
+}
+}
+@-webkit-keyframes 
+shutdown-opa {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 1;
+}
+}
+@keyframes 
+shutdown-opa {  0% {
+ opacity: 0;
+}
+ 50% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 1;
+}
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/Creating-A-TV-Shutdown-Effect-with-CSS3-Transitions-Transforms.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin-top:150px;" align="center">TV Shutdown Effect Demo</h1>
+<div class="screen-wr">
+  <a href="#" class="js-shtd-btn">Click me!</a>
+  <div class="tv">
+    <div class="screen-inner">
+      <div class="screen-content">
+        <iframe src="//player.vimeo.com/video/25323516?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="590" height="330" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="tv-panel">
+      <div class="tv-panel__indicators"> <span></span> <span></span> <span></span> </div>
+      <div class="tv-panel__buttons"> <span></span> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script>
+var $tv = $('.tv')
+  ,$screen = $('.screen-content')
+  ,$btn = $('.js-shtd-btn')
+  ,videoHtml = '<iframe src="//player.vimeo.com/video/25323516?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="590" height="330" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+
+$btn.on('click', function(){
+  if ($tv.hasClass('_off')) {
+    $tv.removeClass('_off');
+    $screen.html(videoHtml)
+  } else {
+    $tv.addClass('_off');
+    $screen.empty();
+  }
+})
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
