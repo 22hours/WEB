@@ -9,7 +9,7 @@
 
 * 웹 URL은 서버를 열었을 때만 가능하며, 도메인 서버는 ngrok를 통해 얻은 것
 
-#MockUp
+MockUp
 ---
 https://ovenapp.io/view/Fb8xEUE0sXTXENwnI0ynPs8FbU6ZAHth/m9ZTe
 
