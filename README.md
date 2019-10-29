@@ -20,7 +20,7 @@
 - React.js
 - npm
 - yarn
-- react script
+- `react script`
 
 
 
@@ -31,6 +31,8 @@
 
 
 > Open 80, 3000 port (Inbound) 
+
+Both `80(http)` & `3000(tcp)(react)` have to be opened
 
 
 
