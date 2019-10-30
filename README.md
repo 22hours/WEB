@@ -1,6 +1,5 @@
-![image](https://user-images.githubusercontent.com/16419202/67858465-9234af00-fb5c-11e9-8a06-1e176e18fe39.png)
-
 # 22Hours-Offical-Website
+![image](https://user-images.githubusercontent.com/16419202/67858465-9234af00-fb5c-11e9-8a06-1e176e18fe39.png)
 ### BROWSER : JQuery를 이용한 page들 업로드
   - 아직 소스코드 최적화 안되어있고, 플러그인 중 필요없는 js는 지우도록 하겠음. 
 <br><br>
