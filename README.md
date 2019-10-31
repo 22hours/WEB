@@ -6,7 +6,7 @@
 
 ### MOBILE : React기반 SPA
   - Ignite, Native Base
-  - 반응형 웹 : http://22hours.online/
+  - 반응형 웹 : http://www.22hours.online/
   - Commit 완료(19-09-08)
 
 * 웹 URL은 서버를 열었을 때만 가능하며, 도메인 서버는 ngrok를 통해 얻은 것
